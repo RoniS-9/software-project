@@ -62,13 +62,13 @@ int main(void) {
     }
 
 
-    // /* convert to target base */
+    /* convert to target base */
     // int reversed = 0;
     // while (decimal != 0) {
     //     reversed = (reversed * 10) + (decimal % 10);
     //     decimal = decimal / 10;
     // }
-    //
+
     // /* convert to target base */
     // int remainder = 0;
     // while (reversed != 0) {
