@@ -3,7 +3,9 @@
 int main(void) {
     int source, target;
     int decimal = 0;
+    int temp;
     char c;
+    int power = 1;
 
     printf("enter the source base:\n");
     scanf("%d", &source);
@@ -26,7 +28,6 @@ int main(void) {
         c = getchar();
     }
 
-    int temp;
     /* conversion to decimal */
     while (c != '\n') {
         if (c >= '0' && c <= '9') {
@@ -44,7 +45,6 @@ int main(void) {
     }
 
     /* find highest power of target base */
-    int power = 1;
     while (decimal / power >= target) {
         power *= target;
     }
@@ -63,24 +63,25 @@ int main(void) {
 
 
     /* convert to target base */
-    // int reversed = 0;
-    // while (decimal != 0) {
-    //     reversed = (reversed * 10) + (decimal % 10);
-    //     decimal = decimal / 10;
-    // }
+    /* int reversed = 0;
+    while (decimal != 0) {
+    reversed = (reversed * 10) + (decimal % 10);
+    decimal = decimal / 10;
+    } */
 
-    // /* convert to target base */
-    // int remainder = 0;
-    // while (reversed != 0) {
-    //     remainder = reversed % target;
-    //     reversed = reversed / target;
-    //     if (remainder >= 10) {
-    //         remainder += 87;
-    //     }
-    //     else {
-    //         remainder += 48;
-    //     }
-    //     printf("%c", remainder);
-    // }
+    /* convert to target base */
+    /* int remainder = 0;
+    while (reversed != 0) {
+    remainder = reversed % target;
+    reversed = reversed / target;
+    if (remainder >= 10) {
+    remainder += 87;
+    }
+    else {
+    remainder += 48;
+    }
+    printf("%c", remainder);
+    } */
     printf("\n");
+    return 0;
 }
